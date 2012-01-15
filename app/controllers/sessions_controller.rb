@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
       render 'new'
     else
       sign_in_user
-      redirect_to_user
+      redirect_back_or user
     end
   end
 
